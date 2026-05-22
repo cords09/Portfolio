@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cords09 System</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="aurora">
+
+<div class="custom-cursor" id="cursor"></div>
+
+<!-- BOOT -->
+
+<div class="boot-screen" id="boot">
+
+  <div class="boot-logo">
+    Cords09<span>.SYS</span>
+  </div>
+
+  <div class="boot-text">
+    Initializing modules...
+  </div>
+
+  <div class="boot-bar">
+    <div class="boot-progress"></div>
+  </div>
+
+</div>
+
+<!-- BACKGROUND -->
+
+<div class="bg-grid"></div>
+
+<div class="noise"></div>
+
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<!-- NAV -->
+
+<nav class="nav">
+
+  <div class="logo">
+    Guilherme<span>.dev</span>
+  </div>
+
+  <div class="theme-wrapper">
+
+    <button class="theme-btn" onclick="toggleMenu()">
+      SYSTEM MODE
+    </button>
+
+    <div class="theme-menu" id="themeMenu">
+
+      <div class="theme-option" onclick="setTheme('corporativo')">
+        CORPORATIVO
+      </div>
+
+      <div class="theme-option" onclick="setTheme('aurora')">
+        DARK
+      </div>
+
+      <div class="theme-option" onclick="setTheme('hacker')">
+        DARK GREEN
+      </div>
+
+      <div class="theme-option" onclick="setTheme('experimental')">
+        DARK PINK
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div>
+
+    <div class="badge">
+
+      <div class="dot"></div>
+
+      DISPONÍVEL PARA OPORTUNIDADES
+
+    </div>
+
+    <h1>
+      Construindo<br>
+      <span>sistemas.</span>
+    </h1>
+
+    <p>
+      Desenvolvedor multiplataforma (web, mobile, desktop),
+      inteligência artificial,
+      sistemas embarcados, gerente de projetos e arquiteto de software.
+    </p>
+
+    <div class="buttons">
+
+      <button 
+        class="btn btn-primary"
+        onclick="scrollToSection('projects')"
+      >
+        Ver Projetos
+      </button>
+
+      <button 
+        class="btn btn-secondary"
+        onclick="scrollToSection('contact')"
+      >
+        Contato
+      </button>
+
+    </div>
+
+    <!-- TERMINAL -->
+
+    <div class="terminal">
+
+      <div class="terminal-top">
+
+        <div class="term-dot red"></div>
+        <div class="term-dot yellow"></div>
+        <div class="term-dot green"></div>
+
+      </div>
+
+      <div class="terminal-body">
+
+        > whoami <br>
+        Guilherme Cordeiro <br><br>
+
+        > skills <br>
+        Python • C • Dart • JAVA • JavaScript • Html • CSS • Flutter • Cordova • React • AI • Sistemas Embarcados <br><br>
+
+        > status <br>
+        ONLINE
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ORB -->
+
+  <div class="visual">
+
+    <div class="orb">
+      GC
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section" id="projects">
+
+  <h2 class="section-title">
+    Projetos
+  </h2>
+
+  <div class="projects">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+      <small>01</small>
+
+      <h3>
+        Mini Estacionamento
+      </h3>
+
+      <p>
+        Sistema Autônomo de Estacionamento para Shopping Centers com foco em tecnologias embarcadas.
+      </p>
+
+      <div class="tags">
+
+        <div class="tag">C</div>
+
+        <div class="tag">Arduinos</div>
+
+        <div class="tag">Sistemas Embarcados</div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+      <small>02</small>
+
+      <h3>
+        Portfólio
+      </h3>
+
+      <p>
+        Ambiente pessoal para expor projetos e habilidades.
+      </p>
+
+      <div class="tags">
+
+        <div class="tag">Web</div>
+
+        <div class="tag">Html</div>
+
+        <div class="tag">CSS</div>
+
+        <div class="tag">JavaScript</div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+      <small>03</small>
+
+      <h3>
+        Irl Stream
+        <span>(Em Desenvolvimento)</span>
+      </h3>
+
+      <p>
+        App mobile conectado ao aplicativo desktop para realizar transmissões sem risco de queda por perda de sinal, utilizando o desktop como servidor.
+      </p>
+
+      <div class="tags">
+
+        <div class="tag">Dart</div>
+
+        <div class="tag">Flutter</div>
+
+        <div class="tag">Kotlin</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+  <h2 class="section-title">
+    Contato
+  </h2>
+
+  <div class="contact">
+
+    <!-- EMAIL -->
+
+    <div 
+      class="contact-card copy-card"
+      onclick="copyEmail()"
+    >
+
+      ✉️ guilhermecordeiro_s@outlook.com
+
+      <span id="copyText">
+        Clique para copiar
+      </span>
+
+    </div>
+
+    <!-- GITHUB -->
+
+    <div class="contact-card">
+
+      <a 
+        class="contact-link"
+        href="https://github.com/cords09"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        💻 github.com/cords09
+      </a>
+
+    </div>
+
+    <!-- LINKEDIN -->
+
+    <div class="contact-card">
+
+      <a 
+        class="contact-link"
+        href="https://www.linkedin.com/in/guilhermecordeiro-"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🔗 linkedin.com/in/guilhermecordeiro-
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer">
+
+  <p>
+    © 2026 Guilherme Cordeiro
+  </p>
+      <span>
+      STATUS: ONLINE
+    </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
