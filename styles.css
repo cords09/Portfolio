@@ -935,3 +935,53 @@ body{
   border-top:1px solid #333;
 
 }
+
+
+
+/* =========================
+   MOBILE EXTRA
+========================= */
+
+@media(max-width:480px){
+
+  .hero{
+    padding-top:140px;
+  }
+
+  .hero h1{
+    font-size:2.4rem;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .orb{
+    width:180px;
+    height:180px;
+
+    font-size:42px;
+  }
+
+  .terminal-body{
+    font-size:12px;
+  }
+
+  .card{
+    padding:22px;
+  }
+
+  .card h3{
+    font-size:20px;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
